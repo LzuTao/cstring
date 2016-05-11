@@ -3,8 +3,6 @@
 #include <iostream>
 #include "CString.h"
 
-using namespace std;
-
 CString::CString(): str(NULL), length(0) {}
 
 CString::CString(char c): length(1) {
