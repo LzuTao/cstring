@@ -11,24 +11,24 @@ private:
 public:
 	CString();
 	CString(char c);
-	CString(const char* m_newStr, int m_length = 0);
+	CString(const char* m_str, int m_length = 0);
 	CString(const CString& copy);
 
 	int getLength() const;
 
-	CString& operator = (const CString& m_newStr);
-	CString operator + (const CString& m_newStr) const;
+	CString& operator = (const CString& m_str);
+	CString operator + (const CString& m_str) const;
 
-	bool operator < (const CString& m_newStr) const;
-	bool operator > (const CString& m_newStr) const;
-	bool operator <= (const CString& m_newStr) const;
-	bool operator >= (const CString& m_newStr) const;
-	bool operator == (const CString& m_newStr) const;
-	bool operator != (const CString& m_newStr) const;
+	bool operator < (const CString& m_str) const;
+	bool operator > (const CString& m_str) const;
+	bool operator <= (const CString& m_str) const;
+	bool operator >= (const CString& m_str) const;
+	bool operator == (const CString& m_str) const;
+	bool operator != (const CString& m_str) const;
 	
 	CString& expand(char c);
-	CString& expand(const char* m_newStr);
-	CString& expand(const CString& m_newStr);
+	CString& expand(const char* m_str);
+	CString& expand(const CString& m_str);
 
 	CString& remove(char c);
 
@@ -39,6 +39,4 @@ public:
 	
 };
 
-
-
-#endif // CSTRINGm_H
+#endif // CSTRING_H
